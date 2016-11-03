@@ -20,6 +20,7 @@ module.exports = function (app) {
 	app.post('/api/friends', function (req, res) {
 		// Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
 		// It will do this by sending out the value "true" have a table	
+			console.log(req.body);
 			friendData.push(req.body);
 			// Logic to compare the datasubmitted by user to the data from friends data will go here
 			// return the data match in response instead of true
