@@ -8,6 +8,11 @@ var friendArray = [
      1,
      4,
      4,
+     5,
+     5,
+     4,
+     4,
+     3,
      5
     ]
 },
@@ -19,13 +24,23 @@ var friendArray = [
      1,
      3,
      4,
-     2
+     2,
+     5,
+     4,
+     4,
+     3,
+     5
     ]
 },
 {
   "name":"Jerry",
   "photo":"http://blog.kevineikenberry.com/wp-content/uploads/2013/10/seinfeld_jerry.jpg",
   "scores":[
+     1,
+     1,
+     2,
+     2,
+     5,
      1,
      1,
      2,
@@ -41,6 +56,11 @@ var friendArray = [
      4,
      4,
      3,
+     5,
+     1,
+     1,
+     2,
+     2,
      5
     ]
 }

@@ -24,7 +24,7 @@
     </div>
     <div class="form-group">
       <h4>Question One</h4>
-      <label for="sel1">Which type of Movies you like to watch ?</label>
+      <label for="movies">Which type of Movies you like to watch ?</label>
       <select class="form-control chosenSelect" id="movies">
         <option value="">Select One</option>
         <option value="1">Action</option>
@@ -36,7 +36,7 @@
     </div>
     <div class="form-group">
       <h4>Question Two</h4>
-      <label for="sel1">Whats your favorite Food?</label>
+      <label for="food">Whats your favorite Food?</label>
       <select class="form-control chosenSelect" id="food">
         <option value="">Select One</option>
         <option value="1">Italian</option>
@@ -47,8 +47,8 @@
       </select>
     </div>
     <div class="form-group">
-      <h4>Question Two</h4>
-      <label for="sel1">What type of Books you like to read?</label>
+      <h4>Question Three</h4>
+      <label for="books">What type of Books you like to read?</label>
       <select class="form-control chosenSelect" id="books">
         <option value="">Select One</option>
         <option value="1">Fiction</option>
@@ -59,8 +59,8 @@
       </select>
     </div>
     <div class="form-group">
-      <h4>Question Two</h4>
-      <label for="sel1">How creative are you on scale of 1 to 5?</label>
+      <h4>Question Four</h4>
+      <label for="creative">How creative are you on scale of 1 to 5?</label>
       <select class="form-control chosenSelect" id="creative">
         <option value="">Select One</option>
         <option value="1">1 (Not Much)</option>
@@ -71,8 +71,8 @@
       </select>
     </div>
      <div class="form-group">
-      <h4>Question Two</h4>
-      <label for="sel1">How spontaneous are you on scale of 1 to 5?</label>
+      <h4>Question Five</h4>
+      <label for="spontaneous">How spontaneous are you on scale of 1 to 5?</label>
       <select class="form-control chosenSelect" id="spontaneous">
         <option value="">Select One</option>
         <option value="1">1 (Not Much)</option>
@@ -82,6 +82,67 @@
         <option value="5">5 (Very Spontaneous)</option>
       </select>
     </div>
+      <div class="form-group">
+      <h4>Question Six</h4>
+      <label for="mind">Your mind is always buzzing with unexplored ideas and plans?</label>
+      <select class="form-control chosenSelect" id="mind">
+        <option value="">Select One</option>
+        <option value="1">1 (Not Much)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Very)</option>
+      </select>
+    </div>
+      <div class="form-group">
+      <h4>Question Seven</h4>
+      <label for="gogetter">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+      <select class="form-control chosenSelect" id="gogetter">
+        <option value="">Select One</option>
+        <option value="1">1 (Not Much)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Very)</option>
+      </select>
+    </div>
+      <div class="form-group">
+      <h4>Question Eight</h4>
+      <label for="practical">In a discussion, truth should be more important than people’s sensitivities.</label>
+      <select class="form-control chosenSelect" id="practical">
+        <option value="">Select One</option>
+        <option value="1">1 (Not Much)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Very)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <h4>Question Nine</h4>
+      <label for="logical">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+      <select class="form-control chosenSelect" id="logical">
+        <option value="">Select One</option>
+        <option value="1">1 (Not Much)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Very)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <h4>Question Ten</h4>
+      <label for="poepleperson">You feel more energetic after spending time with a group of people.</label>
+      <select class="form-control chosenSelect" id="poepleperson">
+        <option value="">Select One</option>
+        <option value="1">1 (Not Much)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Very)</option>
+      </select>
+    </div>
+
     <div class="form-group">
       <div class="col-sm-12">
         <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
@@ -108,7 +169,7 @@
         </div>
         <div class="modal-body">
           <h2 id="matchName"></h2>
-          <img id="matchImg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+          <img id="matchImg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="" class="img-responsive">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -118,11 +179,11 @@
     </div>
   </div>
 <script type="text/javascript">
-  // Capture the form inputs 
+  // Capture the form inputs and validate them
     $("#submit").on("click", function(){
-
         function validateForm() {
             var isValid = true;
+            // check if input fields are empty
             $('.inputVal').each(function() {
               if ( $(this).val() === ''){            
                 isValid = false;
@@ -130,7 +191,7 @@
                 console.log($(this).val());
               }
             });
-
+            // Check if select value valid
             $('.chosenSelect').each(function() {
               if( $(this).val() === "")
                 isValid = false;
@@ -147,21 +208,22 @@
             var userData = {
               name: $("#name").val(),
               photo: $("#photo").val(),
-              scores: [$("#movies").val(), $("#food").val(), $("#books").val(), $("#creative").val(), $("#spontaneous").val()]
+              scores: [$("#movies").val(), $("#food").val(), $("#books").val(), $("#creative").val(), $("#spontaneous").val(),$("#mind").val(), $("#gogetter").val(), $("#practical").val(), $("#logical").val(), $("#poepleperson").val()]
             }
 
-            console.log(userData);
+            // console.log(userData);
 
 
             // Grab the URL of the website
             var currentURL = window.location.origin;
 
-            console.log(currentURL);
+            /console.log(currentURL);
 
             // AJAX post the data to the friends API. 
             $.post(currentURL + "/api/friends", userData, function(data){
 
-              console.log(data);
+              // console.log(data);
+              
               // Grab the result from the AJAX post so that the best match's name and photo are displayed.
               $("#matchName").text(data.name);
               $('#matchImg').attr("src", data.photo);
