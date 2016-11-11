@@ -1,214 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Survey</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Survey</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-
-<div class="container">
-  <h2>Survey Questions</h2>
-  <hr>
-  <form class="form-horizontal">
-    <div class="form-group">
-      <label for="name"><h4>Name (Required)</h4></label>
-      <input type="text" class="form-control inputVal" id="name" name="" required>
+    <div class="container">
+        <h2>Survey Questions</h2>
+        <hr>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="name">
+                    <h4>Name (Required)</h4></label>
+                <input type="text" class="form-control inputVal" id="name" name="" required>
+            </div>
+            <div class="form-group">
+                <label for="photo">
+                    <h4>Link to Photo Image (Required)</h4></label>
+                <input type="text" class="form-control inputVal" name="" id="photo" required="">
+            </div>
+            <div class="form-group">
+                <h4>Question One</h4>
+                <label for="movies">Which type of Movies you like to watch ?</label>
+                <select class="form-control chosenSelect" id="movies">
+                    <option value="">Select One</option>
+                    <option value="1">Action</option>
+                    <option value="2">Thriller</option>
+                    <option value="3">Romance</option>
+                    <option value="4">Comedy</option>
+                    <option value="5">Family</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question Two</h4>
+                <label for="food">Whats your favorite Food?</label>
+                <select class="form-control chosenSelect" id="food">
+                    <option value="">Select One</option>
+                    <option value="1">Italian</option>
+                    <option value="2">American</option>
+                    <option value="3">Thai</option>
+                    <option value="4">Mexican</option>
+                    <option value="5">Indian</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question Three</h4>
+                <label for="books">What type of Books you like to read?</label>
+                <select class="form-control chosenSelect" id="books">
+                    <option value="">Select One</option>
+                    <option value="1">Fiction</option>
+                    <option value="2">Non Fiction</option>
+                    <option value="3">Biography</option>
+                    <option value="4">Travel</option>
+                    <option value="5">Science</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question Four</h4>
+                <label for="creative">How creative are you on scale of 1 to 5?</label>
+                <select class="form-control chosenSelect" id="creative">
+                    <option value="">Select One</option>
+                    <option value="1">1 (Not Much)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Very Creative)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question Five</h4>
+                <label for="spontaneous">How spontaneous are you on scale of 1 to 5?</label>
+                <select class="form-control chosenSelect" id="spontaneous">
+                    <option value="">Select One</option>
+                    <option value="1">1 (Not Much)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Very Spontaneous)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question Six</h4>
+                <label for="mind">Your mind is always buzzing with unexplored ideas and plans?</label>
+                <select class="form-control chosenSelect" id="mind">
+                    <option value="">Select One</option>
+                    <option value="1">1 (Not Much)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Very)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question Seven</h4>
+                <label for="gogetter">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+                <select class="form-control chosenSelect" id="gogetter">
+                    <option value="">Select One</option>
+                    <option value="1">1 (Not Much)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Very)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question Eight</h4>
+                <label for="practical">In a discussion, truth should be more important than people’s sensitivities.</label>
+                <select class="form-control chosenSelect" id="practical">
+                    <option value="">Select One</option>
+                    <option value="1">1 (Not Much)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Very)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question Nine</h4>
+                <label for="logical">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+                <select class="form-control chosenSelect" id="logical">
+                    <option value="">Select One</option>
+                    <option value="1">1 (Not Much)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Very)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question Ten</h4>
+                <label for="poepleperson">You feel more energetic after spending time with a group of people.</label>
+                <select class="form-control chosenSelect" id="poepleperson">
+                    <option value="">Select One</option>
+                    <option value="1">1 (Not Much)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Very)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit
+                    </button>
+                </div>
+            </div>
+        </form>
+        <hr>
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/manalimatkar/FriendFinder">GitHub Repo</a></p>
+            </div>
+        </footer>
     </div>
-    <div class="form-group">
-      <label for="photo"><h4>Link to Photo Image (Required)</h4></label>
-      <input type="text" class="form-control inputVal" name="" id="photo" required="">     
-    </div>
-    <div class="form-group">
-      <h4>Question One</h4>
-      <label for="movies">Which type of Movies you like to watch ?</label>
-      <select class="form-control chosenSelect" id="movies">
-        <option value="">Select One</option>
-        <option value="1">Action</option>
-        <option value="2">Thriller</option>
-        <option value="3">Romance</option>
-        <option value="4">Comedy</option>
-        <option value="5">Family</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <h4>Question Two</h4>
-      <label for="food">Whats your favorite Food?</label>
-      <select class="form-control chosenSelect" id="food">
-        <option value="">Select One</option>
-        <option value="1">Italian</option>
-        <option value="2">American</option>
-        <option value="3">Thai</option>
-        <option value="4">Mexican</option>
-        <option value="5">Indian</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <h4>Question Three</h4>
-      <label for="books">What type of Books you like to read?</label>
-      <select class="form-control chosenSelect" id="books">
-        <option value="">Select One</option>
-        <option value="1">Fiction</option>
-        <option value="2">Non Fiction</option>
-        <option value="3">Biography</option>
-        <option value="4">Travel</option>
-        <option value="5">Science</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <h4>Question Four</h4>
-      <label for="creative">How creative are you on scale of 1 to 5?</label>
-      <select class="form-control chosenSelect" id="creative">
-        <option value="">Select One</option>
-        <option value="1">1 (Not Much)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Very Creative)</option>
-      </select>
-    </div>
-     <div class="form-group">
-      <h4>Question Five</h4>
-      <label for="spontaneous">How spontaneous are you on scale of 1 to 5?</label>
-      <select class="form-control chosenSelect" id="spontaneous">
-        <option value="">Select One</option>
-        <option value="1">1 (Not Much)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Very Spontaneous)</option>
-      </select>
-    </div>
-      <div class="form-group">
-      <h4>Question Six</h4>
-      <label for="mind">Your mind is always buzzing with unexplored ideas and plans?</label>
-      <select class="form-control chosenSelect" id="mind">
-        <option value="">Select One</option>
-        <option value="1">1 (Not Much)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Very)</option>
-      </select>
-    </div>
-      <div class="form-group">
-      <h4>Question Seven</h4>
-      <label for="gogetter">You find it easy to stay relaxed and focused even when there is some pressure.</label>
-      <select class="form-control chosenSelect" id="gogetter">
-        <option value="">Select One</option>
-        <option value="1">1 (Not Much)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Very)</option>
-      </select>
-    </div>
-      <div class="form-group">
-      <h4>Question Eight</h4>
-      <label for="practical">In a discussion, truth should be more important than people’s sensitivities.</label>
-      <select class="form-control chosenSelect" id="practical">
-        <option value="">Select One</option>
-        <option value="1">1 (Not Much)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Very)</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <h4>Question Nine</h4>
-      <label for="logical">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
-      <select class="form-control chosenSelect" id="logical">
-        <option value="">Select One</option>
-        <option value="1">1 (Not Much)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Very)</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <h4>Question Ten</h4>
-      <label for="poepleperson">You feel more energetic after spending time with a group of people.</label>
-      <select class="form-control chosenSelect" id="poepleperson">
-        <option value="">Select One</option>
-        <option value="1">1 (Not Much)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Very)</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <div class="col-sm-12">
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
- Submit</button>
-      </div>
-    </div>
-  </form>
-  <hr>
-
-      <footer class="footer">
-        <div class="container">
-            <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/manalimatkar/FriendFinder">GitHub Repo</a></p>
+    <!-- Modal -->
+    <div id="resultsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title"><strong>Best Match</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="matchName"></h2>
+                    <img id="matchImg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-      </footer>
-</div>
-<!-- Modal -->
-  <div id="resultsModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h2 class="modal-title"><strong>Best Match</strong></h2>
-        </div>
-        <div class="modal-body">
-          <h2 id="matchName"></h2>
-          <img id="matchImg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="" class="img-responsive">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
     </div>
-  </div>
-<script type="text/javascript">
-  // Capture the form inputs and validate them
-    $("#submit").on("click", function(){
+    <script type="text/javascript">
+    // Capture the form inputs and validate them
+    $("#submit").on("click", function() {
         function validateForm() {
             var isValid = true;
             // check if input fields are empty
             $('.inputVal').each(function() {
-              if ( $(this).val() === ''){            
-                isValid = false;
-              }else{
-                console.log($(this).val());
-              }
+                if ($(this).val() === '') {
+                    isValid = false;
+                } else {
+                    console.log($(this).val());
+                }
             });
             // Check if select value valid
             $('.chosenSelect').each(function() {
-              if( $(this).val() === "")
-                isValid = false;
-              console.log($(this).val());
+                if ($(this).val() === "")
+                    isValid = false;
+                console.log($(this).val());
             });
 
             return isValid;
         }
 
         // If all required fields are filled
-        if (validateForm() == true)
-        {
-          // Create an object for the user's data
+        if (validateForm() == true) {
+            // Create an object for the user's data
             var userData = {
-              name: $("#name").val(),
-              photo: $("#photo").val(),
-              scores: [$("#movies").val(), $("#food").val(), $("#books").val(), $("#creative").val(), $("#spontaneous").val(),$("#mind").val(), $("#gogetter").val(), $("#practical").val(), $("#logical").val(), $("#poepleperson").val()]
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: [$("#movies").val(), $("#food").val(), $("#books").val(), $("#creative").val(), $("#spontaneous").val(), $("#mind").val(), $("#gogetter").val(), $("#practical").val(), $("#logical").val(), $("#poepleperson").val()]
             }
 
             // console.log(userData);
@@ -220,27 +219,25 @@
             //console.log(currentURL);
 
             // AJAX post the data to the friends API. 
-            $.post(currentURL + "/api/friends", userData, function(data){
+            $.post(currentURL + "/api/friends", userData, function(data) {
 
-              // console.log(data);
-              
-              // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-              $("#matchName").text(data.name);
-              $('#matchImg').attr("src", data.photo);
+                // console.log(data);
 
-              // Show the modal with the best match 
-              $("#resultsModal").modal('toggle');
+                // Grab the result data from the AJAX post so that the best match's name and photo are displayed.
+                $("#matchName").text(data.name);
+                $('#matchImg').attr("src", data.photo);
+
+                // Show the modal with the best match 
+                $("#resultsModal").modal('toggle');
 
             });
-        }
-        else
-        {
-          alert("Please fill out all fields before submitting!");
+        } else {
+            alert("Please fill out all fields before submitting!");
         }
 
-      return false;
+        return false;
     });
-
-</script>
+    </script>
 </body>
+
 </html>
